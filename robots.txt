@@ -1,0 +1,7 @@
+# Robots.txt for mobile-hairstyling.co.uk
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mobile-hairstyling.co.uk/sitemap.xml
