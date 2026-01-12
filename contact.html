@@ -57,6 +57,7 @@
       <div class="container">
         <h1>Contact Me</h1>
         <p>Get in touch to book an appointment or ask a question</p>
+        <p style="margin-top: var(--spacing-sm); color: var(--color-secondary); font-weight: 500;">By appointment only. Visit our salon or we can come to you.</p>
       </div>
     </section>
     
@@ -70,7 +71,7 @@
             <h2>Send a Message</h2>
             <p style="color: var(--color-gray); margin-bottom: var(--spacing-lg);">Fill out the form below and I'll get back to you as soon as possible.</p>
             
-            <form action="https://formspree.io/f/REPLACE_ME" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/xwpkgpzd" method="POST">
               <div class="form-row">
                 <div class="form-group">
                   <label for="firstName">First Name *</label>
@@ -112,6 +113,8 @@
               </div>
               
               <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              
+              <div id="form-status" class="form-status" style="display: none; margin-top: var(--spacing-md); padding: var(--spacing-md); border-radius: var(--border-radius); text-align: center;"></div>
             </form>
           </div>
           
