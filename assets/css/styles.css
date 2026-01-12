@@ -5,12 +5,12 @@
 
 /* CSS Custom Properties */
 :root {
-  --color-primary: #2c3e50;
-  --color-secondary: #8b7355;
-  --color-accent: #d4a574;
-  --color-light: #f8f6f4;
+  --color-primary: #8b6f62;
+  --color-secondary: #c89e8c;
+  --color-accent: #e6b8a2;
+  --color-light: #faf7f5;
   --color-white: #ffffff;
-  --color-dark: #1a1a1a;
+  --color-dark: #2d2420;
   --color-gray: #6b7280;
   --color-gray-light: #e5e7eb;
   --color-success: #059669;
@@ -263,6 +263,7 @@ h4 { font-size: var(--font-size-lg); }
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
   overflow-y: auto;
+  z-index: 1000;
 }
 
 .nav.is-open {
