@@ -2,7 +2,7 @@
 
 A clean, modern, static website for a UK mobile hairdresser based in Aylesbury, Buckinghamshire.
 
-**Live Site:** [mobile-hairstyling.co.uk](https://mobile-hairstyling.co.uk)
+**Intended Domain:** [mobile-hairstyling.co.uk](https://mobile-hairstyling.co.uk) *(configure DNS after deployment)*
 
 ## Features
 
