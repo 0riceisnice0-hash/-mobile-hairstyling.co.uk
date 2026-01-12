@@ -65,10 +65,30 @@ For a custom domain (mobile-hairstyling.co.uk):
 
 ### Contact Form
 
-The contact form uses [Formspree](https://formspree.io/). To enable it:
-1. Create a free account at formspree.io
-2. Create a new form and copy the form endpoint
-3. Replace `https://formspree.io/f/REPLACE_ME` in contact.html with your endpoint
+The contact form uses [Formspree](https://formspree.io/) to send emails to harrietbartley@hotmail.co.uk. 
+
+**Current Setup:**
+The form is already configured with a working Formspree endpoint (`https://formspree.io/f/xwvvkqgw`). The form includes:
+- Success message display when submission succeeds
+- Error message display when submission fails  
+- Automatic form clearing after successful submission
+- Proper validation for required fields
+
+**To Update the Formspree Endpoint (if needed):**
+1. Create a free account at [formspree.io](https://formspree.io/)
+2. Create a new form project
+3. Copy your form endpoint (format: `https://formspree.io/f/YOUR_FORM_ID`)
+4. In `contact.html`, find the form tag (around line 74) and update the `action` attribute:
+   ```html
+   <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+   ```
+5. The form will automatically send submissions to the email address configured in your Formspree account
+
+**Form Features:**
+- Success state: Green message "Thank you! Your message has been sent. I will get back to you soon."
+- Error state: Red message "Oops! There was a problem sending your message. Please try again or call directly."
+- All form fields are validated before submission
+- JavaScript handling in `assets/js/main.js` (initContactForm function)
 
 ### Images
 
