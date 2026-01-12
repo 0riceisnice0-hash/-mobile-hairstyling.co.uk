@@ -999,8 +999,8 @@ h4 { font-size: var(--font-size-lg); }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: var(--spacing-xl);
+  align-items: stretch;
+  gap: var(--spacing-lg);
   padding: var(--spacing-lg) 0;
 }
 
@@ -1010,9 +1010,13 @@ h4 { font-size: var(--font-size-lg); }
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  width: 200px;
+  height: 120px;
+  flex: 0 0 200px;
 }
 
 .credential-logo {
@@ -1029,31 +1033,14 @@ h4 { font-size: var(--font-size-lg); }
 
 .credential-logo-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: var(--border-radius);
+  height: 80px;
+  object-fit: contain;
 }
 
 .credential-text {
   font-size: var(--font-size-sm);
   color: var(--color-gray);
   font-weight: 500;
-}
-
-/* Responsive sizing for affiliation logos */
-@media (min-width: 576px) {
-  .credential-item {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (min-width: 768px) {
-  .credential-item {
-    width: 140px;
-    height: 140px;
-  }
 }
 
 /* Footer */

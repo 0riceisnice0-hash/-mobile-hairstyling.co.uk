@@ -68,7 +68,7 @@ For a custom domain (mobile-hairstyling.co.uk):
 The contact form uses [Formspree](https://formspree.io/) to send emails to harrietbartley@hotmail.co.uk. 
 
 **Current Setup:**
-The form is already configured with a working Formspree endpoint (`https://formspree.io/f/xwpkgpzd`). The form includes:
+The form is already configured with a working Formspree endpoint (`https://formspree.io/f/xwvvkqgw`). The form includes:
 - Success message display when submission succeeds
 - Error message display when submission fails  
 - Automatic form clearing after successful submission
