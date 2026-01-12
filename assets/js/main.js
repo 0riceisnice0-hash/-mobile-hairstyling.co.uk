@@ -12,6 +12,7 @@
     initLightbox();
     initCurrentYear();
     initActiveNavLink();
+    initContactForm();
   });
 
   /**
@@ -206,6 +207,53 @@
       if (href && currentPath.endsWith(href.replace('./', ''))) {
         link.classList.add('active');
       }
+    });
+  }
+
+  /**
+   * Contact Form Handling
+   */
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    
+    if (!form || !status) return;
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      var data = new FormData(form);
+      
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(function(response) {
+        if (response.ok) {
+          status.style.display = 'block';
+          status.style.backgroundColor = '#d4edda';
+          status.style.color = '#155724';
+          status.textContent = 'Thank you! Your message has been sent. I will get back to you soon.';
+          form.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      }).catch(function() {
+        status.style.display = 'block';
+        status.style.backgroundColor = '#f8d7da';
+        status.style.color = '#721c24';
+        status.textContent = 'Oops! There was a problem sending your message. Please try again or call directly.';
+      }).finally(function() {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      });
     });
   }
 
