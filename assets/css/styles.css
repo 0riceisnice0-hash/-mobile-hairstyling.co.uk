@@ -1210,6 +1210,11 @@ h4 { font-size: var(--font-size-lg); }
   object-position: center top;
 }
 
+/* Per-image crop tweaks */
+.image-grid-item img.image-shift-up-100 {
+  object-position: center -100px;
+}
+
 /* Services List for Hair Styling Page */
 .services-list {
   display: grid;
