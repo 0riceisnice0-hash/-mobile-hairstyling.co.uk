@@ -1001,8 +1001,8 @@ h4 { font-size: var(--font-size-lg); }
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg) 0;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
 }
 
 .credential-item {
@@ -1011,14 +1011,14 @@ h4 { font-size: var(--font-size-lg); }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   background-color: var(--color-white);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-sm);
   /* Mobile: smaller logos */
   flex: 0 0 auto;
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 65px;
 }
 
 .credential-logo {
@@ -1047,9 +1047,15 @@ h4 { font-size: var(--font-size-lg); }
 
 /* Tablet and up: slightly larger */
 @media (min-width: 768px) {
+  .credentials {
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+  }
+  
   .credential-item {
     width: 150px;
     height: 100px;
+    padding: var(--spacing-md);
   }
 }
 
