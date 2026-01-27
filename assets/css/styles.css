@@ -1573,10 +1573,6 @@ h4 { font-size: var(--font-size-lg); }
     padding: 0;
   }
   
-  .footer-section li {
-    margin-bottom: 2px;
-  }
-  
   .footer-section a {
     font-size: 0.8125rem;
   }
@@ -1710,7 +1706,7 @@ h4 { font-size: var(--font-size-lg); }
     font-size: var(--font-size-sm);
   }
   
-  /* Stack footer in single column on very small screens, but keep it compact */
+  /* Keep footer in 2-column layout on very small screens with smaller text */
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
