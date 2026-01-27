@@ -1282,3 +1282,458 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-gray);
   font-size: var(--font-size-sm);
 }
+
+/* =============================================
+   Mobile Optimization Styles
+   ============================================= */
+
+/* Mobile-first base adjustments (max-width: 767px) */
+@media (max-width: 767px) {
+  
+  /* Reduce base spacing across the site */
+  :root {
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+  }
+  
+  /* Smaller heading sizes on mobile */
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+  
+  /* Tighter section padding */
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-header p {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Compact page hero */
+  .page-hero {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .page-hero p {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Hero section - more compact */
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .hero-appointment-note {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .hero-buttons {
+    gap: var(--spacing-xs);
+  }
+  
+  .hero-buttons .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Smaller buttons on mobile */
+  .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Feature sections - more compact */
+  .feature-section {
+    gap: var(--spacing-lg);
+  }
+  
+  .feature-content h2 {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .feature-content p {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  .feature-image {
+    aspect-ratio: 16/9;
+    max-height: 200px;
+  }
+  
+  /* Service cards - more compact */
+  .service-card {
+    padding: var(--spacing-md);
+  }
+  
+  .service-card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .service-card h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+  }
+  
+  .service-card p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .services-grid {
+    gap: var(--spacing-md);
+  }
+  
+  /* Review cards - compact */
+  .review-card {
+    padding: var(--spacing-md);
+  }
+  
+  .review-stars {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .review-text {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .reviews-grid {
+    gap: var(--spacing-md);
+  }
+  
+  /* Gallery - tighter */
+  .gallery-grid {
+    gap: var(--spacing-xs);
+  }
+  
+  /* Process steps - compact */
+  .process-step {
+    padding: var(--spacing-md);
+  }
+  
+  .process-step::before {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .process-step h3 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .process-step p {
+    font-size: 0.8125rem;
+  }
+  
+  .process-steps {
+    gap: var(--spacing-sm);
+  }
+  
+  /* Service items - compact */
+  .service-item {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+  
+  .service-item-icon {
+    width: 36px;
+    height: 36px;
+    font-size: var(--font-size-base);
+  }
+  
+  .service-item h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  
+  .service-item p {
+    font-size: 0.8125rem;
+  }
+  
+  .services-list {
+    gap: var(--spacing-sm);
+  }
+  
+  /* Pricing - compact */
+  .pricing-category {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .pricing-category h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+  }
+  
+  .pricing-category h3 {
+    font-size: 1.1rem;
+  }
+  
+  .pricing-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  .pricing-note,
+  .callout {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* CTA section - compact */
+  .cta-section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .cta-section p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .cta-buttons {
+    gap: var(--spacing-xs);
+  }
+  
+  /* Contact strip - compact */
+  .contact-strip {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .contact-strip-inner {
+    gap: var(--spacing-sm);
+  }
+  
+  .contact-strip-item {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* =============================================
+     Footer Mobile Optimization - Key Focus
+     ============================================= */
+  .footer {
+    padding: var(--spacing-lg) 0 var(--spacing-sm);
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md) var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer-section {
+    padding: 0;
+  }
+  
+  .footer-section h4 {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .footer-section p,
+  .footer-section li {
+    font-size: 0.8125rem;
+    margin-bottom: 2px;
+    line-height: 1.4;
+  }
+  
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 2px;
+  }
+  
+  .footer-section a {
+    font-size: 0.8125rem;
+  }
+  
+  .footer-bottom {
+    padding-top: var(--spacing-sm);
+  }
+  
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
+  
+  /* Credentials/Affiliations - compact */
+  .credentials {
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) 0;
+  }
+  
+  .credential-item {
+    width: 70px;
+    height: 55px;
+    padding: var(--spacing-xs);
+  }
+  
+  /* Contact form - compact */
+  .contact-form {
+    padding: var(--spacing-md);
+  }
+  
+  .contact-form h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .form-group {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .form-group label {
+    font-size: var(--font-size-sm);
+    margin-bottom: 4px;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 0.625rem;
+    font-size: var(--font-size-sm);
+  }
+  
+  .form-group textarea {
+    min-height: 120px;
+  }
+  
+  /* Contact info - compact */
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .contact-detail {
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+  }
+  
+  .contact-detail-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .map-container {
+    height: 200px;
+    margin-top: var(--spacing-md);
+  }
+  
+  /* Image grid - compact */
+  .image-grid {
+    gap: var(--spacing-xs);
+  }
+  
+  .image-grid-item {
+    aspect-ratio: 1;
+  }
+  
+  /* Links directory - compact */
+  .links-category {
+    padding: var(--spacing-md);
+  }
+  
+  .links-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+  }
+  
+  .links-list {
+    gap: var(--spacing-xs);
+  }
+  
+  .links-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .links-item h4 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .links-item p {
+    font-size: 0.75rem;
+  }
+  
+  /* Social links - smaller */
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Extra small screens (max-width: 480px) - even more compact */
+@media (max-width: 480px) {
+  
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.35rem; }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Stack footer in single column on very small screens, but keep it compact */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer-section p,
+  .footer-section li,
+  .footer-section a {
+    font-size: 0.75rem;
+  }
+  
+  /* Even smaller credentials */
+  .credential-item {
+    width: 60px;
+    height: 48px;
+  }
+  
+  /* Tighter feature images */
+  .feature-image {
+    max-height: 180px;
+  }
+  
+  /* Contact grid - stack */
+  .contact-grid {
+    gap: var(--spacing-lg);
+  }
+}
