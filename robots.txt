@@ -1,4 +1,5 @@
 # Robots.txt for mobile-hairstyling.co.uk
+# Professional Mobile Hairdresser Aylesbury - Harriet Bartley
 
 User-agent: *
 Allow: /
