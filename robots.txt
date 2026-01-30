@@ -4,11 +4,5 @@
 User-agent: *
 Allow: /
 
-# Crawl delay to be kind to server
-Crawl-delay: 10
-
 # Sitemap location
 Sitemap: https://mobile-hairstyling.co.uk/sitemap.xml
-
-# Host directive
-Host: https://mobile-hairstyling.co.uk
