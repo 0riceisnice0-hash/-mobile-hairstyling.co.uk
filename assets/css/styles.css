@@ -1282,3 +1282,55 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-gray);
   font-size: var(--font-size-sm);
 }
+
+
+/* Service Areas Section - SEO Content */
+.service-areas-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-areas-content h3 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.service-areas-content p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray);
+}
+
+.service-areas-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xs);
+  margin: var(--spacing-md) 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .service-areas-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-areas-list li {
+  padding: var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+}
+
+.service-areas-content ul:not(.service-areas-list) {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+  list-style: disc;
+}
+
+.service-areas-content ul:not(.service-areas-list) li {
+  padding: var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+}
+
