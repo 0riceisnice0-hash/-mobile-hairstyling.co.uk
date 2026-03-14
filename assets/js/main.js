@@ -258,3 +258,41 @@
   }
 
 })();
+
+/**
+ * Blog Date-Gating
+ * Hides blog post cards whose data-publish-date is in the future.
+ * Called automatically on DOMContentLoaded via the IIFE below.
+ */
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initBlogDateGating();
+  });
+
+  function initBlogDateGating() {
+    var cards = document.querySelectorAll('.blog-card[data-publish-date]');
+    if (!cards.length) return;
+
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    var visibleCount = 0;
+    cards.forEach(function(card) {
+      var publishDate = new Date(card.getAttribute('data-publish-date'));
+      publishDate.setHours(0, 0, 0, 0);
+      if (publishDate > today) {
+        card.style.display = 'none';
+        card.setAttribute('aria-hidden', 'true');
+      } else {
+        visibleCount++;
+      }
+    });
+
+    var noPostsMsg = document.getElementById('blog-no-posts');
+    if (noPostsMsg) {
+      noPostsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+})();
