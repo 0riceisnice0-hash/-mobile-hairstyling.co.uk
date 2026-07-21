@@ -1,6 +1,6 @@
 # Harriet Bartley Mobile Hairstyling
 
-A clean, modern, static website for a UK mobile hairdresser based in Aylesbury, Buckinghamshire.
+A clean, modern, static website for a UK mobile hairdresser based in Aylesbury.
 
 **Intended Domain:** [mobile-hairstyling.co.uk](https://mobile-hairstyling.co.uk) *(configure DNS after deployment)*
 
